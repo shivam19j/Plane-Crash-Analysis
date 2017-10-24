@@ -1,4 +1,9 @@
-
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt
+import seaborn as sns
+from collections import Counter 
+df = pd.read_csv("Airplane_Crashes_and_Fatalities_Since_1908.csv")
 operator_count = Counter(df['Operator'].dropna()).most_common(10)
 operator_keys = [operator[0] for operator in operator_count]
 operator_val = [operator[1] for operator in operator_count]
