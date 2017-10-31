@@ -15,5 +15,4 @@ plt.title('Operator vs Fatalities')
 plt.xlabel('Operator')
 plt.ylabel('Total Fatalities')
 ticks = plt.setp(ax.get_xticklabels(),rotation=90)
-
 plt.show()
